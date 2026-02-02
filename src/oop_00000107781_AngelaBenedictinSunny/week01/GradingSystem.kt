@@ -1,10 +1,6 @@
 package oop_00000107781_AngelaBenedictinSunny.week01
 
-class GradingSystem {
-}
-
 fun calculateStatus(score: Int) = if(score>75) "Lulus" else "Tidak Lulus"
-
 
 fun main(){
     val name = "John Thor"
@@ -12,7 +8,7 @@ fun main(){
 
     println("Nama : $name, Nilai: $score")
 
-    val grade = when(score){
+    val grade = when (score) {
         in 90 ..100 -> "A"
         in 80 ..89 -> "B"
         in 70 ..79 -> "C"
