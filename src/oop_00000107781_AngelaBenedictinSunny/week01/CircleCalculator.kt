@@ -1,6 +1,6 @@
 package oop_00000107781_AngelaBenedictinSunny.week01
 
-fun main(args: Array<String>) {
+fun main() {
     val radius = 7.0
     val pi = 3.14
 
