@@ -3,6 +3,9 @@ package oop_00000107781_AngelaBenedictinSunny.week01
 class GradingSystem {
 }
 
+fun calculateStatus(score: Int) = if(score>75) "Lulus" else "Tidak Lulus"
+
+
 fun main(){
     val name = "John Thor"
     val score = 80
@@ -17,4 +20,5 @@ fun main(){
     }
 
     println("Grade kami : $grade")
+    println("Status : ${calculateStatus(score)}")
 }
