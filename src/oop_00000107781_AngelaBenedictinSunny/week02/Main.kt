@@ -14,6 +14,7 @@ fun main(){
 
     scanner.nextLine()
 
+
     if(nim.length != 5) {
         println("ERROR: Pendaftaran dibatalkan. NIM harus 5 karakter!")
         // Program berhenti di sini untuk mahasiswa inim tidak membuat objek

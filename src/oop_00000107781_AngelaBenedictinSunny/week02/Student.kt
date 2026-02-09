@@ -15,8 +15,8 @@ class Student (
         }
     }
     // Body class kosong dulu
-
-    constructor(name : String, nim : String) : this (name, nim,  "Non-Matriculated"){
+    // Perbaikan, tadi sy lupa tambahkan 0.0 di secondary cosntructor
+    constructor(name : String, nim : String) : this (name, nim, 0.0, "Non-Matriculated"){
         println("LOG:Menggunakan constructor jalur umum (Tanpa Jurusan).")
     }
 }
