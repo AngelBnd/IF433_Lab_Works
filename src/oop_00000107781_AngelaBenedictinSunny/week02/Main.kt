@@ -14,7 +14,6 @@ fun main(){
 
     scanner.nextLine()
 
-
     if(nim.length != 5) {
         println("ERROR: Pendaftaran dibatalkan. NIM harus 5 karakter!")
         // Program berhenti di sini untuk mahasiswa inim tidak membuat objek
@@ -23,7 +22,25 @@ fun main(){
         val major = scanner.nextLine()
 
         // Instansiasi objek karena data sudah aman
-        val sl = Student(name, nim, major)
+        val sl = Student(name = name, nim = nim, major = major)
         println("Status: Pendaftaran Selesai")
+    }
+
+    print("Pilih Jalur (1. Refuler, 2. Umum): ")
+    val type = scanner.nextInt()
+    scanner.nextLine()
+
+    if(type == 1){
+        print("Masukkan Jurusan: ")
+        val major = scanner.nextLine()
+
+        val s1 = Student(name = name, nim = nim, major = major)
+        println("Terdaftar di: ${s1.major} dengan GPA awal ${s1.gpa}")
+
+    } else if(type==2){
+        val s2 = Student(name, nim)
+        println("Terdaftar di ${s2.major} dengan GPA awal ${s2.gpa}")
+    } else {
+        println("Pilihan ngawur, pendaftaran batal!")
     }
 }
