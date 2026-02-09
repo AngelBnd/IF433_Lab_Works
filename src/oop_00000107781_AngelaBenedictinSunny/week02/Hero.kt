@@ -2,7 +2,8 @@ package oop_00000107781_AngelaBenedictinSunny.week02
 
 class Hero(
     val name: String,
-    var hp: Int,
+    // Tadi aku lupa tambahin default argumentnya
+    var hp: Int = 100,
     val baseDamage : Int
 ) {
 
