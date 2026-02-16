@@ -8,6 +8,7 @@ fun main(){
     println(weaponYes.damage)
     println(weaponYes.tier)
 
+    // Tadi saya salah commit message
     val playerYes = Player("Momo");
 //    player.xp = 20
     playerYes.addXp(50)
