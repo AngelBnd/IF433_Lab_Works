@@ -17,4 +17,10 @@ fun main(){
     myElectricCar.accelerate()
     myElectricCar.honk()
     myElectricCar.openTrunk()
+
+    // ini buat test kalo class class yang telah dibuat itu berjalan atau tidak
+//    println("\n--- Employee Thing---")
+//    val managerTest = Manager("Robert", 20000)
+//    val bonusTest = managerTest.calculateBonus();
+//    println(bonusTest)
 }
