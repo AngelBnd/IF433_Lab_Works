@@ -19,10 +19,13 @@ fun main(){
     myElectricCar.openTrunk()
 
      //ini buat test kalo class class yang telah dibuat itu berjalan atau tidak
-//    println("\n--- Employee Thing---")
-//    val managerTest = Manager("Robert", 20000)
-//    val bonusTest = managerTest.calculateBonus();
-//    println(bonusTest)
-//    val devTest = Developer("alice", 2000, "kava")
-//    devTest.work()
+    println("\n--- Employee Thing---")
+    val managerTest = Manager("Robert", 20000)
+    val bonusTest = managerTest.calculateBonus();
+    managerTest.work()
+    println("bonus for the developer named ${managerTest.name} is $bonusTest");
+    val devTest = Developer("alice", 2000, "kava")
+    devTest.work()
+    val bonusTestDev = devTest.calculateBonus();
+    println("bonus for the developer named ${devTest.name} is $bonusTestDev");
 }
