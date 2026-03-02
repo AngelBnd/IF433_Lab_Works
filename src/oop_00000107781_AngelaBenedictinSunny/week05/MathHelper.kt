@@ -10,8 +10,8 @@ class MathHelper {
         return panjang * lebar;
     }
 
-    fun hitungLuas(jariJari : Double) : Int{
-        return (3.14 * jariJari * jariJari).toInt()
+    fun hitungLuas(jariJari : Double) : Double{
+        return 3.14 * jariJari * jariJari
     }
 
 }
