@@ -11,6 +11,8 @@ fun main() {
         when(ya){
             is EWallet ->{
                 ya.topUp(50000.0)
+                ya.processPayment(75000.0)
+                println("sekarang saldo di ewallet sebanyak ${ya.balance}")
             }
             is CreditCard ->{
                 ya.processPayment(75000.0)
@@ -19,4 +21,5 @@ fun main() {
     }
 
     //Sebelumnya, aku salah kasih commit message lagi, maafkan ko
+    //Aku salah kasih commit message lagi. Maaf pak/kak. Di commit yang sebelumnya, itu tugasnya sudah selesai. Ini nanti aku tambahin modifikasi sedikit lagi buat for loopnya
 }
