@@ -23,7 +23,17 @@ fun main() {
     processCheckout(pay2, 150000.0)
 
     // TUGAS MANDIRI
+    println("MULAI TUGAS MANDIRI DARI SEKARANG")
     val sl = SmartLamp("sl1", "Ruang Tamu")
     val ss = SmartSpeaker("ss1", "Google Nest Dapur")
     val scctv = SmartCCTV("scctv1", "Ezviz Garasi")
+
+    val hub = SmartHomeHub();
+    hub.addDevice(sl);
+    hub.addDevice(ss);
+    hub.addDevice(scctv);
+
+    hub.activateSecurityMode()
+    hub.turnOffAllSwitches()
+
 }
