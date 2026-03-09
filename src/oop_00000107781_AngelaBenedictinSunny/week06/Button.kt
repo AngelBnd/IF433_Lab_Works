@@ -5,5 +5,4 @@ package oop_00000107781_AngelaBenedictinSunny.week06
 class Button(override val name : String) : Clickable {
     override fun click(){
         println("Tombol '$name' berhaisl diklik!" )
-    }
-}
+    }  }
