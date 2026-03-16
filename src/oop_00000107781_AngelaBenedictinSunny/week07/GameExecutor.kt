@@ -11,7 +11,7 @@ fun processEvent(event: BattleState){
         is BattleState.GameOver -> "GameOver! It's over because of ${event.reason}"
         is BattleState.SafeZone -> "You are in safe zone."
     }
-
+    // Tadi salah komit message pak atau kak, mohon maaf.
     println(message)
 }
 
