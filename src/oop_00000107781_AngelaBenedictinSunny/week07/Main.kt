@@ -32,7 +32,10 @@ fun main() {
         is ApiResponse.Loading -> "Tampilkan Spinner"
     }
 
-    println("TEST TEST")
-    val yes = Weapon.forgeStarterSword();
-    println(yes.durability)
+    println("TUGAS MANDIRI")
+    GameManager.startGame()
+    GameManager.startGame()
+
+    val firstWeapon = Weapon.forgeStarterSword()
+    println("Senjata pertama telah dibuat!\n Nama : ${firstWeapon.item.name}\n Damage : ${firstWeapon.item.damage}\n Rarity : ${firstWeapon.item.rarity}\n Durability : ${firstWeapon.durability}")
 }
