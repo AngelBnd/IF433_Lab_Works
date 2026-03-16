@@ -31,4 +31,8 @@ fun main() {
         is ApiResponse.Error -> "Tampilkan: ${response.message}"
         is ApiResponse.Loading -> "Tampilkan Spinner"
     }
+
+    println("TEST TEST")
+    val yes = Weapon.forgeStarterSword();
+    println(yes.durability)
 }
