@@ -36,6 +36,20 @@ fun main() {
     GameManager.startGame()
     GameManager.startGame()
 
-    val firstWeapon = Weapon.forgeStarterSword()
+    // Item bisa diset null, suapaya kedepannya bisa dibikin item baru lagi yang custom. Kalau null, artinya sword yang dibikin itu defaultnya (Yang di modul)
+    val firstWeapon = Weapon.forgeStarterSword(null);
     println("Senjata pertama telah dibuat!\n Nama : ${firstWeapon.item.name}\n Damage : ${firstWeapon.item.damage}\n Rarity : ${firstWeapon.item.rarity}\n Durability : ${firstWeapon.durability}")
+
+    println("Player pergi ke Blacksmith buat upgrade ${firstWeapon.item.name}")
+    println("Damage ditingkatkan menjadi 25!")
+    val gameItemButUpgraded = firstWeapon.item.copy(damage=25)
+    val upgradaedfirstWeapon = Weapon.forgeStarterSword(gameItemButUpgraded);
+    println("Senjata telah diupgrade!\n Nama : ${upgradaedfirstWeapon.item.name}\n Damage : ${upgradaedfirstWeapon.item.damage}\n Rarity : ${upgradaedfirstWeapon.item.rarity}\n Durability : ${upgradaedfirstWeapon.durability}")
+    processEvent(BattleState.SafeZone)
+    processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+    processEvent(BattleState.LootDropped(gameItemButUpgraded))
+    processEvent(BattleState.GameOver("Terkena jebakan racun, aw!"))
+
+
+
 }
