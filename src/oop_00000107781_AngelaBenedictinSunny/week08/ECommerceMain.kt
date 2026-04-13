@@ -16,8 +16,19 @@ fun main() {
             returnedObj?.let{
                 apiParse.checkout(returnedObj)
             }
-        }catch (e : Exception) {
 
+            //untuk formatting output
+            when(returnedObj) {
+                is Electronic -> {
+                    println("${returnedObj.name} (Warranty ${returnedObj.warrantyMonths})")
+                }
+                is Clothing -> {
+                    println("${returnedObj.name} (Size ${returnedObj.size})")
+                }
+                else -> {}
+            }
+        }catch (e : Exception) {
+            println("Objeknya tidak valid")
         }
     }
 }
