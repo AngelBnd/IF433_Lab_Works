@@ -27,8 +27,8 @@ fun main() {
                 }
                 else -> {}
             }
-        }catch (e : Exception) {
-            println("Objeknya tidak valid")
+        }catch (e : IllegalArgumentException) {
+            println("Objek tidak valid.")
         }
     }
 }
