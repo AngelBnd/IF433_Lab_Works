@@ -43,8 +43,17 @@ fun main() {
     println("test red button !!")
     val toxicData: String? = null
     try{
-        val length = toxicData!!.length
+        val length = toxicData?.length
     }catch(e: NullPointerException){
         println("CRASH NPE!! Jangan gunakan !! secara sembarangan.")
+    }
+
+    val apiResponse : Map<String, String?> = mapOf("Status" to "200", "token" to null)
+    try{
+        val token = requireNotNull(apiResponse["token"]){
+            "CRITICAL EXCEPTION: TOken otentikasi tidak ditemukan api server!"
+        }
+    }catch(e:IllegalStateException){
+        println(e.message)
     }
 }
