@@ -48,12 +48,18 @@ fun main() {
         println("CRASH NPE!! Jangan gunakan !! secara sembarangan.")
     }
 
-    val apiResponse : Map<String, String?> = mapOf("Status" to "200", "token" to null)
-    try{
-        val token = requireNotNull(apiResponse["token"]){
-            "CRITICAL EXCEPTION: TOken otentikasi tidak ditemukan api server!"
-        }
-    }catch(e:IllegalStateException){
-        println(e.message)
-    }
+//    val apiResponse : Map<String, String?> = mapOf("Status" to "200", "token" to null)
+//    try{
+//        val token = requireNotNull(apiResponse["token"]){
+//            "CRITICAL EXCEPTION: TOken otentikasi tidak ditemukan api server!"
+//        }
+//    }catch(e:IllegalStateException){
+//        println(e.message)
+//    }
+
+    println("tedt java interop")
+    val javaResponse = LegacyJavaAPI.fetchServerStatus()
+
+    val statusLength = javaResponse!!.length
+    println("STatus dari java : $javaResponse (Length: $statusLength)")
 }
