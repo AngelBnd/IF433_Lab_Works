@@ -38,5 +38,5 @@ fun main() {
 
     val safeString = someObject as? String?: "Uknown String"
     println("Hasil cast + fallback  : $safeString")
-
+    // Main kt sudah dijalankan, berhasil
 }
