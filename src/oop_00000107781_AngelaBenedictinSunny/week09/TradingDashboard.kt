@@ -7,7 +7,9 @@ fun main(){
         TradeLog("ETHUSDT","Ok",2, -20.0,"CLOSED"),
         TradeLog("BTCUSDT","Down",10, 20.0,"OPEN"))
 
-    val closedTrades = tradeHistory.filter{it.status=="CLOSED"
-    //Tadi commit dengan salah message.
-}
+    val closedTrades = tradeHistory.filter{it.status=="CLOSED"}
+
+    val winningTrades = closedTrades.filter{it.roe>0}
+
+    }
 
