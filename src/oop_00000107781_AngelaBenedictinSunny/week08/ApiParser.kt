@@ -27,8 +27,8 @@ class ApiParser {
     fun checkout(product : Product){
         var id : String= ""
         when(product){
-            is Electronic ->{id = product.id}
-            is Clothing -> {id = product.id}
+            is Electronic ->{val id = product.id}
+            is Clothing -> {val id = product.id}
 
         }
 
