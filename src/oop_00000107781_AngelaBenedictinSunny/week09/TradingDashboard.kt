@@ -8,6 +8,6 @@ fun main(){
         TradeLog("BTCUSDT","Down",10, 20.0,"OPEN"))
 
     val closedTrades = tradeHistory.filter{it.status=="CLOSED"
-
+    //Tadi commit dengan salah message.
 }
 
