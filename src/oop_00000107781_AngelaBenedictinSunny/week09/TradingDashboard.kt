@@ -6,8 +6,8 @@ fun main(){
         TradeLog("ETHUSDT","DontKnow",50, 20.0,"CLOSED"),
         TradeLog("ETHUSDT","Ok",2, -20.0,"CLOSED"),
         TradeLog("BTCUSDT","Down",10, 20.0,"OPEN"))
+
+    val closedTrades = tradeHistory.filter{it.status=="CLOSED"
+
 }
 
-
-// data class TradeLog(val pair: String, val position: String,
-                //    val leverage: Int, val roe:Double, val status: String)
