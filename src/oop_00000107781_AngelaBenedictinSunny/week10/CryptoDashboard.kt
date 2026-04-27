@@ -12,9 +12,18 @@ fun main(){
     for(coin in response.data){
         println("Name: ${coin.name} Balance: ${coin.balance}")
     }
+    println("Found ${coinRepo.search("ETH")}")
 
     val txRepo = WalletRepository<Transaction>()
     txRepo.add(Transaction("2XS", 214.0))
     txRepo.add(Transaction("4XL", 224.0))
     txRepo.add(Transaction("5XS", 204.0))
+
+    println("DASHBOARD TRANSACTIONS")
+    val txData = txRepo.getAll()
+    for(tx in txData){
+        println("Name: ${tx.id} Balance: ${tx.amount}")
+    }
+    //Terdapat modifikasi dari function search, function yang sebelumnya cara kerjanya tidak benar
+
 }
