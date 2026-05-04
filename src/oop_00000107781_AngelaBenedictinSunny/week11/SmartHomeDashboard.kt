@@ -16,4 +16,24 @@ fun main(){
         println("(LOG) Kamera Terhubung")
     })
 
+
+    var objekACInverter = run{
+        SmartDevice("Daikin Inverter (Kabel 3x2.5)", "HVAC", false, 800)
+    }
+    homeDevices.add(objekACInverter)
+
+    var picoloAutoFeeder = run{
+        SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10)
+    }
+    homeDevices.add(picoloAutoFeeder)
+
+    val searchResult = homeDevices.find{
+        it.category == "Camera"
+    }
+
+    searchResult?.let{
+        it.diagnose()
+    }
+    println(searchResult)
+
 }
