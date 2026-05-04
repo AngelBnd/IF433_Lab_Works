@@ -36,4 +36,7 @@ fun main(){
     }
     println(searchResult)
 
+    with(homeDevices){
+        println(this.size)
+    }
 }
