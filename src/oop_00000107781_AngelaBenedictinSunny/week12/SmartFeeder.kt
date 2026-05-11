@@ -38,5 +38,9 @@ fun main(){
             newStock -> currentKibbleStock = newStock
             println("makan sore sukses! sisa stok kibble: $currentKibbleStock gr.")
         }
+        .onFailure {
+            error -> println("error: ${error.message}")
+            println("kasihnya manual aja")
+        }
 }
 
