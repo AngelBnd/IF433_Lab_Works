@@ -27,6 +27,12 @@ fun saveTrades(trades : List<TradeRecord>, path: String) {
     }
 }
 
+fun loadTrades(path: String) : List<TradeRecord> {
+    try{
+        File(path).readLines().mapNotNull{ fromCsvTrade(it) }
+    }
+}
+
 fun main(){
 ;
 }
