@@ -25,4 +25,11 @@ fun main(){
 
     println("100 barus log berhasil digenerate dengan sangat amat super duper aman.")
 
+    println("\n=== TEST BUFFERED READER ===")
+    safeFile.bufferedReader().use { reader ->
+        reader.lineSequence().take(5).forEach { line->
+            println("Stream Read: $line")
+        }
+    }
+
 }
