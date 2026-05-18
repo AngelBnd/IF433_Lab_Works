@@ -1,4 +1,5 @@
 package oop_00000107781_AngelaBenedictinSunny.week13
+import java.io.File
 
 data class TradeRecord(val id: Int, val symbol: String, val type : String, val margin : Double, val pnl : Double)
 
@@ -16,5 +17,16 @@ fun fromCsvTrade(line: String) : TradeRecord? {
         println("(Log) Data Korup diabaikan: $line");
         return null;
     }
+}
 
+fun saveTrades(trades : List<TradeRecord>, path: String) {
+    File(path).printWriter().use { out ->
+        trades.forEach{
+            println(it.toCsv());
+        }
+    }
+}
+
+fun main(){
+;
 }
