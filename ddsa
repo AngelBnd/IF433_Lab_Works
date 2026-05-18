@@ -1,0 +1,83 @@
+[33mcommit 2c868489e62b564289530b7d7e39f39493e2d44f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:41:36 2026 +0700
+
+    week01: (tugas 2) implement null safety for user note
+
+[33mcommit c3134bba9ad2a65d83aa8a2a6e91f1a51fe794d1[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:38:55 2026 +0700
+
+    week01: (tugas 2) implement receipt printing
+
+[33mcommit 0ee27b94eea31983a245a948b58126cfef24d449[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:34:14 2026 +0700
+
+    week01: (tugas 2) implement discount logic
+
+[33mcommit 21eeea350e6f5d216272bc47b87d68fe38857210[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:28:48 2026 +0700
+
+    week01: (tugas 2) setup GameStore file
+
+[33mcommit 9ddd4fb06a5c50c9acf125b2bc2e725f5cc364cf[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:25:18 2026 +0700
+
+    week01: (tugas 1) clean up unused argos and comments
+
+[33mcommit 5df1b45fad3130e0164aef31c99e494af9c27bb8[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:24:15 2026 +0700
+
+    week01: (tugas 1) convert checkSize to expression body function
+
+[33mcommit ec81ee3c6182983017887bf63c31abfd2c2f0929[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:17:15 2026 +0700
+
+    week01: (tugas 1) refactor variables to val and use string templates
+
+[33mcommit 0328d8fd5c8a9163a7b0d64529215b1f5e157f38[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 16:12:11 2026 +0700
+
+    week01: (tugas 1) add legacy CircleCalculator code
+
+[33mcommit e6dbe04df0faee7e1a554ab974e658c007f27232[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:42:19 2026 +0700
+
+    week01: implement null safety check
+
+[33mcommit b94c7e5e9704ed42fa666b7799b8383efabd5464[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:39:49 2026 +0700
+
+    week01: add calculateStatus function
+
+[33mcommit 7cd337dbc720720b2a717c461a5a28442edaafe0[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:38:14 2026 +0700
+
+    week01: implement grading logic using when expression
+
+[33mcommit 932f0f92aac41c44f9a4aaa2702c875ab2d19626[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:34:43 2026 +0700
+
+    week01: refactor to use val and string templates
+
+[33mcommit caeb77a2ea572a0da584aa38c6aff3b80f83aeee[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:31:36 2026 +0700
+
+    week01: initial setup and procedural code
+
+[33mcommit 9bb7b70042a73b6d5a8d23ea0326125ef9776227[m
+Author: AngelBnd <angelabenedictins@gmail.com>
+Date:   Mon Feb 2 15:26:43 2026 +0700
+
+    init
