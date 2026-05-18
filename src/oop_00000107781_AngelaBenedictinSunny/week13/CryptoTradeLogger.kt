@@ -1,5 +1,6 @@
 package oop_00000107781_AngelaBenedictinSunny.week13
 import java.io.File
+import java.io.FileNotFoundException
 
 data class TradeRecord(val id: Int, val symbol: String, val type : String, val margin : Double, val pnl : Double)
 
@@ -29,8 +30,12 @@ fun saveTrades(trades : List<TradeRecord>, path: String) {
 
 fun loadTrades(path: String) : List<TradeRecord> {
     try{
-        File(path).readLines().mapNotNull{ fromCsvTrade(it) }
+        return File(path).readLines().mapNotNull{ fromCsvTrade(it) }
+    } catch ( e : FileNotFoundException) {
+        println("(Log) Data Korup diabaikan: $path");
+        return listOf()
     }
+    // revisi
 }
 
 fun main(){
