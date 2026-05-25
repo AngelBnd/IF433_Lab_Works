@@ -1,13 +1,17 @@
 package oop_00000107781_AngelaBenedictinSunny.week14
 
 interface DiscountStrategy{
-    fun appy(price : Double) : Double
+    fun apply(price : Double) : Double
 }
 
 class StudentDiscount : DiscountStrategy{
-    override fun appy(price : Double) : Double = price * 0.80
+    override fun apply(price : Double) : Double = price * 0.80
 }
 
 class MemberDiscount : DiscountStrategy{
-    override fun appy(price : Double) : Double = price * 0.85
+    override fun apply(price : Double) : Double = price * 0.85
+}
+
+class SafeDiscountCalculator(private val strategy : DiscountStrategy){
+    fun calculate(price : Double) = strategy.apply(price)
 }
