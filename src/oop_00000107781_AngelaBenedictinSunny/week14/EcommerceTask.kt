@@ -34,14 +34,37 @@ interface NotificationService{
 class CsvOrderRepository(val db : Database, val file : File) : OrderRepository{
     override fun saveOrder(itemName: String, finalPrice: Double, customerType: String){
         file.appendText("$itemName,$finalPrice,$customerType\n")
+
     }
 }
 
 class EmailNotifier : NotificationService{
-    override fun sendNotification(title: String, message: String) {}
+    override fun sendNotification(title: String, message: String) {
+        println(title)
+        println(message)
+    }
 }
 
-class SafeOrderProcessor(val repo : OrderRepository, val notifier : NotificationService)
+interface PricingStrategy {
+    fun calculate(price: Double) : Double
+}
+
+class VipPricing : PricingStrategy{
+    override fun calculate(price: Double) = (price * 0.9)
+}
+
+class RegularPricing : PricingStrategy{
+    override fun calculate(price: Double) = (price)
+}
+
+class SafeOrderProcessor(private val repo : OrderRepository,private val notifier : NotificationService, private val pricingStrategy : PricingStrategy){
+    fun processOrder(itemName : String, basePrice : Double, customerType: String){
+        val finalPrice = pricingStrategy.calculate(basePrice)
+        println("Memproses pesanan $itemName sharga $finalPrice")
+        repo.saveOrder(itemName, finalPrice, customerType)
+        notifier.sendNotification("Notifikasi","Email terkirim : Pesanan $itemName Anda telah dikonfirmasi!")
+    }
+}
 
 
 
